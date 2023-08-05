@@ -1,0 +1,22 @@
+{
+  "name": "debug-pubsub",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/plebbit/debug-pubsub.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/plebbit/debug-pubsub/issues"
+  },
+  "homepage": "https://github.com/plebbit/debug-pubsub#readme",
+  "dependencies": {
+    "@plebbit/plebbit-js": "github:plebbit/plebbit-js#3ef37a4fd590b2de968428cf6012d8b1590e7c03"
+  }
+}
