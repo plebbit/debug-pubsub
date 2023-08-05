@@ -11,7 +11,8 @@ let lastTimestamp = Date.now()
 ;(async () => {
   console.log('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
   console.log('starting')
-  const plebbit = await Plebbit()
+  const plebbit = await Plebbit({pubsubHttpClientsOptions: ['https://pubsubprovider.xyz/api/v0', 'https://plebpubsub.live/api/v0']})
+  console.log(plebbit.pubsubHttpClientsOptions)
   plebbit.on('error', e => console.log('error event', e.message))
   const signer = await plebbit.createSigner()
   const comment = await plebbit.createComment({
